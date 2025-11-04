@@ -51,7 +51,7 @@ if __name__ == "__main__":
             valued_players = Calculations.calculate_value_of_player(
                 stats=adp_by_positiion
             )
-            print(valued_players.head(50).to_string(index=False))
+            print(valued_players.head(100).to_string(index=False))
 
     elif parameters.action == "get_players":
         if parameters.team:

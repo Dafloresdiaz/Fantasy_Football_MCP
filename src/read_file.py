@@ -6,7 +6,7 @@ class Read_File:
         """
         Read the CSV file using pandas to return a data frame.
         """
-        data_frame = pd.read_csv("csv_files/adp_ranks.csv")
+        data_frame = pd.read_csv("csv_files/adp_rank_ppr.csv")
         filter_adp = data_frame[data_frame['POS'].str.startswith(position)].sort_values("AVG")
         filter_adp = filter_adp[["Player", "Team", "POS", "AVG"]]
         return filter_adp
@@ -17,13 +17,13 @@ class Read_File:
         """
         data_frame = None
         if position == "QB":
-            data_frame = pd.read_csv("csv_files/quarterback_stats.csv")
+            data_frame = pd.read_csv("csv_files/quarterback_stats_v2.csv")
         elif position == "RB":
-            data_frame = pd.read_csv("csv_files/running_back_stats.csv")
+            data_frame = pd.read_csv("csv_files/running_back_stats_v2.csv")
         elif position == "WR":
-            data_frame = pd.read_csv("csv_files/wide_reciever_stats.csv")
+            data_frame = pd.read_csv("csv_files/wide_reciever_stats_v2.csv")
         elif position == "TE":
-            data_frame = pd.read_csv("csv_files/tail_back_stats.csv")
+            data_frame = pd.read_csv("csv_files/tail_back_stats_v2.csv")
         elif position == "DT":
             data_frame = pd.read_csv("csv_files/defense_stats.csv")
         elif position == "K":
