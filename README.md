@@ -1,4 +1,4 @@
-# Fantasy_Football_MCP
+# Fantasy Football Assistant
 With the use of statistics obtain the draft value of list of players. The code
 will give you at least 100 players, this can be modified so it can give you a
 smallest list.
